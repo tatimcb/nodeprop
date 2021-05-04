@@ -9,10 +9,10 @@
 	<meta name="robots" content="index, follow">
 	<meta name="author" content="Tatiane Bernardo">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
 
 	<link rel="icon" href="/img/icon.png">
-
 
 	<link rel="stylesheet" href="css/style.css">
 
@@ -20,27 +20,70 @@
 
 </head>
 <body>
-	<header>
-		<section class="header" id="header">
-			<div class="logo">
-				<img src="/img/logo.png" alt="logo">
-			</div>
-			<div class="navegacao">
-				<nav>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#servicos">Serviços</a></li>
-						<li><a href="#clientes">Clientes</a></li>
-						<li><a href="#blog">Blog</a></li>
-						<li><a href="#sobre">Quem Somos</a></li>
-						<li><a href="#contato">Contato</a></li>
-					</ul>
-				</nav>
-			</div>
-
-		</section>
-
+	<header class="cabecalho">
+		<a href="index.html" class="logo"></a>
+		<button class="btn-menu"><i class="fas fa-bars"></i> </button>
+		<nav class="menu">
+			<a class="btn-close"><i class="fas fa-times"></i></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Clientes</a></li>
+				<li><a href="#">Serviços</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Quem somos</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
 	</header>
-	
+
+	<div class="banner">
+		<div class="title">
+			<h2>Ouse Inovar</h2>
+			<h3>Criamos experiências e estabelecemos ações estratégicas que conectam marcas e consumidores.</h3>
+		</div>
+		<div class="buttons">
+			<button class="btn-cadastrar">Cadastrar <i class="fa fa-arrow-circle-right"></i></button>
+			<button class="btn-sobre">Sobre <i class="fa fa-question-circle"></i> </button>
+		</div>
+	</div>
+
+	<main class="servicos">
+		<article class="servico">
+			<a href="#"><img src="/img/criacoes.jpg" alt="Campanhas publicitárias"></a>
+			<div class="inner">
+				<a href="#">Campanhas Publicitárias</a>
+				<h4>Impressos, VTs e Jingles</h4>
+				<p>Se você está precisando de criação de algum material em específico conte com a nossa equipe de profissionais. Eles farão toda campanha publicitária. VT, outdoor, folder, anúncio e muito mais pelo sua empresa no mais alto padrão de qualidade</p>
+			</div>
+		</article>
+
+		<article class="servico">
+			<a href="#"><img src="/img/md.jpg" alt="Marketing Digital"></a>
+			<div class="inner">
+				<a href="#">Marketing Digital</a>
+				<h4>Administração de Redes Sociais</h4>
+				<p>Como agência de publicidade aplicamos estratégias nos meios digitais para que seu negócio seja visto por milhões de usuários. O Brasil é o 5º país mais conectado do mundo. Por este motivo, o seu negócio não pode ficar fora do mercado digital.</p>
+			</div>
+		</article>
+		
+		<article class="servico">
+			<a href="#"><img src="/img/cs.jpg" alt="Criação de Sites"></a>
+			<div class="inner">
+				<a href="#">Criação de Sites</a>
+				<h4>Sites Administráveis</h4>
+				<p>Agora você pode administrar seu site quando e como quiser. E melhor ainda pois você pode pagar por este serviço. Seu site atualizado com seus últimos profdu</p>
+			</div>
+		</article>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script>
+		$(".btn-menu").click(function(){
+			$(".menu").show();
+		})
+		$(".btn-close").click(function(){
+			$(".menu").hide();
+		})
+	</script>
 </body>
 </html>
